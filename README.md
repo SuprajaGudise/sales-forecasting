@@ -2,11 +2,11 @@
 
 This repository contains code for sales forecasting submissions, showcasing my work on predictive modeling.
 
-<p align="center">
-  <img src="/images/growtika-zk2sfqajgdu-unsplash.jpg" alt="Sales Forecasting Banner" width="800"">
-</p>
-
 <h1 align="center">🌟 Sales Forecasting Repository 🌟</h1>
+
+<p align="center">
+  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=200&q=80" alt="Sales Forecasting Banner">
+</p>
 
 <p align="center">
   This repository contains code for sales forecasting submissions, showcasing my work on predictive modeling. Let’s dive into the world of data science! 📈✨
