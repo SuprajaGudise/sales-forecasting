@@ -5,7 +5,7 @@ This repository contains code for sales forecasting submissions, showcasing my w
 <h1 align="center">🌟 Sales Forecasting Repository 🌟</h1>
 
 <p align="center">
-  <img src="./images/growtika-zk2sfqaJgdU-unsplash.jpg" alt="Sales Forecasting Banner" width="800">
+  <img src="./images/zbra-marketing-IryWX_OSgh4-unsplash.jpg" alt="Sales Forecasting Banner" width="800">
 </p>
 
 <p align="center">
