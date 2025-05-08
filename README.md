@@ -17,6 +17,89 @@ This repository contains code for sales forecasting submissions, showcasing my w
   <img src="https://img.shields.io/badge/Made%20with-Jupyter-orange?style=flat-square&logo=jupyter" alt="Jupyter">
   <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License">
 </p>
+<h2>Introduction</h2>
+<p>The SP25 Sales Forecasting Kaggle Challenge predicts quarterly sales for a steel manufacturer serving 75 customers in Auto, Metal Fabrication, and Infrastructure industries. Accurate forecasts prevent overproduction or shortages, boosting profitability.</p>
+<ul>
+  <li><strong>Business Impact</strong>: Guides production scheduling, inventory management, resource allocation, and financial planning.</li>
+  <li><strong>Model Goal</strong>: Cuts waste, ensures reliable delivery, stabilizes finances, and supports growth.</li>
+  <li><strong>Metric</strong>: Mean Absolute Error (MAE), targeting &lt;500 (~10-15% of avg. sales: 3,500).</li>
+  <li><strong>Top Model</strong>: XGBoost Regressor (Test MAE 627.21) with target-encoded features, lagged economic indicators, and TimeSeriesSplit validation.</li>
+</ul>
+
+<h2>Data Description</h2>
+<h3>Overview</h3>
+<p>The dataset includes:</p>
+<ul>
+  <li><code>train.csv</code>: 525 rows (75 companies, Q1-Q7, with Sales).</li>
+  <li><code>test.csv</code>: 150 rows (Q8-Q9, for prediction).</li>
+  <li><code>sample_submission.csv</code>: Format with ID, Sales.</li>
+  <li><code>EconomicIndicators.csv</code>: 28 months of macroeconomic data.</li>
+</ul>
+
+<h3>Purpose</h3>
+<p>Merges firm-level (e.g., QuickRatio) and macroeconomic (e.g., PMI) data to forecast sales, capturing company and economic trends.</p>
+
+<h3>Key Features</h3>
+<table>
+  <tr>
+    <th>Feature</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th>Relation to Sales</th>
+  </tr>
+  <tr>
+    <td>Company</td>
+    <td>Categorical (75)</td>
+    <td>Customer name</td>
+    <td>Varies by customer</td>
+  </tr>
+  <tr>
+    <td>Quarter</td>
+    <td>Categorical (Q1-Q9)</td>
+    <td>Sales quarter</td>
+    <td>Seasonal impact</td>
+  </tr>
+  <tr>
+    <td>QuickRatio</td>
+    <td>Numeric</td>
+    <td>Liquidity ratio</td>
+    <td>Higher values boost sales</td>
+  </tr>
+  <tr>
+    <td>RevenueGrowth</td>
+    <td>Numeric</td>
+    <td>Projected growth</td>
+    <td>Drives sales</td>
+  </tr>
+  <tr>
+    <td>PMI</td>
+    <td>Numeric</td>
+    <td>Purchasing Managers Index</td>
+    <td>Values &gt;50 increase sales</td>
+  </tr>
+  <tr>
+    <td>Sales</td>
+    <td>Numeric</td>
+    <td>Quarterly sales (target)</td>
+    <td>Target variable</td>
+  </tr>
+</table>
+
+<h3>Statistics</h3>
+<ul>
+  <li><strong>Sales</strong>: Mean 3517.12, median 3041, right-skewed, max 11686.</li>
+  <li><strong>QuickRatio</strong>: Mean 1.62, near-normal, min 0.50.</li>
+  <li><strong>InventoryRatio</strong>: 20.19% missing, median 3.47, right-skewed.</li>
+  <li><strong>PMI</strong>: Cyclical, 46.20-59.20.</li>
+</ul>
+
+<h3>Insights</h3>
+<ul>
+  <li>Sales skewness suggests log-transformation.</li>
+  <li>InventoryRatio needs median imputation.</li>
+  <li>Cyclical indicators require lagged features.</li>
+  <li>Use target encoding for Company, one-hot for Region/Industry.</li>
+</ul>
 
 ## Best Kaggle Submission
 - **File**: `submission_23.ipynb`
