@@ -2,6 +2,23 @@
 
 This repository contains code for sales forecasting submissions, showcasing my work on predictive modeling.
 
+<p align="center">
+  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=200&q=80" alt="Sales Forecasting Banner">
+</p>
+
+<h1 align="center">🌟 Sales Forecasting Repository 🌟</h1>
+
+<p align="center">
+  This repository contains code for sales forecasting submissions, showcasing my work on predictive modeling. Let’s dive into the world of data science! 📈✨
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9+-blue?style=flat-square&logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/Made%20with-Jupyter-orange?style=flat-square&logo=jupyter" alt="Jupyter">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License">
+</p>
+
+
 ## Submission 23
 - **File**: `submission_23.ipynb`
 - **Description**: A stacking ensemble using XGBoost, LightGBM, and CatBoost with optimized weights, applied to a sales forecasting dataset. Features include lagged sales, economic indicators, and interaction terms.
