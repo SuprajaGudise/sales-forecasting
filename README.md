@@ -29,8 +29,10 @@ This repository contains code for sales forecasting submissions, showcasing my w
   4. Run the notebook: `jupyter notebook kaggle_best_submission.ipynb`
 
 ## About Me
-- Exploring data science and machine learning through sales forecasting projects.
-- Check out my [GitHub Stats](https://github.com/SuprajaGuDise) for more insights!
+- I’m a passionate data science and machine learning enthusiast, currently diving deep into sales forecasting projects to uncover actionable insights from complex datasets.
+- With a focus on predictive modeling, I enjoy leveraging tools like Python, Pandas, Scikit-learn, and visualization libraries (Matplotlib, Seaborn) to build robust solutions for real-world problems, such as forecasting quarterly sales for a steel manufacturing company.
+- Beyond coding, I’m dedicated to continuous learning—whether it’s experimenting with new algorithms, exploring time-series analysis, or staying updated on industry trends in data science.
+- Check out my [GitHub Stats](https://github.com/SuprajaGuDise) to see my contributions, or explore my repositories to discover more projects on data analysis, machine learning, and forecasting!
 
 ## Stats
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SuprajaGuDise&show_icons=true)
