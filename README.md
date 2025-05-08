@@ -37,3 +37,30 @@ This repository contains code for sales forecasting submissions, showcasing my w
 ![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=SuprajaGuDise.sales-forecasting)
 
 More submissions will be added soon!
+
+<body>
+  <h1>📈 Sales Forecasting Visualizations</h1>
+  <p>Below are key visualizations from the SP25 Sales Forecasting project, showcasing model performance and data trends:</p>
+
+  <h3>Feature Importance </h3>
+  <div class="center">
+    <img src="https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/PLOT1.jpeg" alt="Feature Importance" class="plot-img" onerror="this.nextElementSibling.style.display='block';">
+    <p class="fallback" style="display:none;">Image failed to load. Please check if PLOT1.jpeg exists in the images folder or verify the URL: https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/PLOT1.jpeg</p>
+  </div>
+  <p>This plot displays the feature importance for the XGBoost model , highlighting key predictors such as Prev_Quarter_Sales, PMI_Lag1, and RevenueGrowth_Diff that significantly influenced sales forecasts, contributing to a test MAE of 627.21.</p>
+
+  <h3>Predicted vs Actual Sales </h3>
+  <div class="center">
+    <img src="https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/PLOT2.jpeg" alt="Predicted vs Actual" class="plot-img" onerror="this.nextElementSibling.style.display='block';">
+    <p class="fallback" style="display:none;">Image failed to load. Please check if PLOT2.jpeg exists in the images folder or verify the URL: https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/PLOT2.jpeg</p>
+  </div>
+  <p>This scatter plot compares predicted sales against actual sales, demonstrating the model’s ability to capture sales trends across 75 companies, with most points clustering near the diagonal line, indicating good predictive accuracy (test MAE 627.21).</p>
+
+  <h3>Time Series Plot</h3>
+  <div class="center">
+    <img src="https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/TIMESERIES%20PLOTS.jpeg" alt="Time Series Plot " class="plot-img" onerror="this.src='https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/TIMESERIES_PLOTS.jpeg'; if(this.complete && this.naturalHeight === 0) this.nextElementSibling.style.display='block';">
+    <p class="fallback" style="display:none;">Image failed to load. Please check if TIMESERIES PLOTS.jpeg exists in the images folder (may need to rename to TIMESERIES_PLOTS.jpeg) or verify the URL: https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/TIMESERIES%20PLOTS.jpeg</p>
+  </div>
+  <p>This time series plot illustrates actual sales (Q1-Q7) alongside the linear regression predictions, highlighting the model’s ability to capture seasonal trends across quarters, though it struggles with sharp fluctuations due to its linear nature.</p>
+
+  
