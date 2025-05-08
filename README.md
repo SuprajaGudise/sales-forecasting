@@ -3,7 +3,7 @@
 This repository contains code for sales forecasting submissions, showcasing my work on predictive modeling.
 
 <p align="center">
-  <img src="./images/growtika-zk2sfqajgdu-unsplash.jpg" alt="Sales Forecasting Banner">
+  <img src="/images/growtika-zk2sfqajgdu-unsplash.jpg" alt="Sales Forecasting Banner" width="800"">
 </p>
 
 <h1 align="center">🌟 Sales Forecasting Repository 🌟</h1>
