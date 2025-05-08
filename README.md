@@ -42,25 +42,24 @@ More submissions will be added soon!
   <h1>📈 Sales Forecasting Visualizations</h1>
   <p>Below are key visualizations from the SP25 Sales Forecasting project, showcasing model performance and data trends:</p>
 
-  <h3>Feature Importance </h3>
-  <div class="center">
-    <img src="https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/PLOT1.jpeg" alt="Feature Importance" class="plot-img" onerror="this.nextElementSibling.style.display='block';">
-    <p class="fallback" style="display:none;">Image failed to load. Please check if PLOT1.jpeg exists in the images folder or verify the URL: https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/PLOT1.jpeg</p>
-  </div>
-  <p>This plot displays the feature importance for the XGBoost model , highlighting key predictors such as Prev_Quarter_Sales, PMI_Lag1, and RevenueGrowth_Diff that significantly influenced sales forecasts, contributing to a test MAE of 627.21.</p>
+  <h3>Sales Trend by Top 5 Companies</h3>
+  <p align="center">
+    <img src="https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/sales_trends_top_companies.png" alt="Sales Trends for Top 5 Companies Over Quarters" class="plot-img" onerror="this.nextElementSibling.style.display='block';">
+    <p class="fallback" style="display:none;">Image failed to load. Please view the repository’s images folder for 'sales_trends_top_companies.png'.</p>
+  </p>
+  <p>This plot tracks sales over quarters for the top 5 customers, revealing distinct patterns like Customer A’s consistent high sales and Customer B’s seasonal peaks. It guides customer-specific forecasting by highlighting trends and variability critical for the steel company’s quarterly predictions.</p>
 
-  <h3>Predicted vs Actual Sales </h3>
-  <div class="center">
-    <img src="https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/PLOT2.jpeg" alt="Predicted vs Actual" class="plot-img" onerror="this.nextElementSibling.style.display='block';">
-    <p class="fallback" style="display:none;">Image failed to load. Please check if PLOT2.jpeg exists in the images folder or verify the URL: https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/PLOT2.jpeg</p>
-  </div>
-  <p>This scatter plot compares predicted sales against actual sales, demonstrating the model’s ability to capture sales trends across 75 companies, with most points clustering near the diagonal line, indicating good predictive accuracy (test MAE 627.21).</p>
+  <h3>Feature Importance Bar Plot</h3>
+  <p align="center">
+    <img src="https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/feature_importance.png" alt="Feature Importance for Sales Prediction" class="plot-img" onerror="this.nextElementSibling.style.display='block';">
+    <p class="fallback" style="display:none;">Image failed to load. Please view the repository’s images folder for 'feature_importance.png'.</p>
+  </p>
+  <p>This bar plot ranks features like InventoryRatio and QuickRatio as top drivers of sales, based on a Random Forest model. It informs model development by focusing on key factors like inventory and liquidity for accurate sales predictions.</p>
 
-  <h3>Time Series Plot</h3>
-  <div class="center">
-    <img src="https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/TIMESERIES%20PLOTS.jpeg" alt="Time Series Plot " class="plot-img" onerror="this.src='https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/TIMESERIES_PLOTS.jpeg'; if(this.complete && this.naturalHeight === 0) this.nextElementSibling.style.display='block';">
-    <p class="fallback" style="display:none;">Image failed to load. Please check if TIMESERIES PLOTS.jpeg exists in the images folder (may need to rename to TIMESERIES_PLOTS.jpeg) or verify the URL: https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/TIMESERIES%20PLOTS.jpeg</p>
-  </div>
-  <p>This time series plot illustrates actual sales (Q1-Q7) alongside the linear regression predictions, highlighting the model’s ability to capture seasonal trends across quarters, though it struggles with sharp fluctuations due to its linear nature.</p>
-
-  
+  <h3>Box Plot of Sales by Quarter</h3>
+  <p align="center">
+    <img src="https://github.com/SuprajaGuDise/sales-forecasting/raw/main/images/sales_by_quarter_boxplot.png" alt="Sales Distribution by Quarter" class="plot-img" onerror="this.nextElementSibling.style.display='block';">
+    <p class="fallback" style="display:none;">Image failed to load. Please view the repository’s images folder for 'sales_by_quarter_boxplot.png'.</p>
+  </p>
+  <p>This box plot shows sales distributions across quarters, with Q1 often having higher medians and outliers, indicating seasonal demand spikes. It helps in forecasting by providing insights into quarterly trends and variability for the steel company.</p>
+</body>
